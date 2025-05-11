@@ -2,7 +2,7 @@
 # 5000-more-common.txt from: https://github.com/MichaelWehar/Public-Domain-Word-Lists
 # This script filters the list of words in English to only include words that are 4-6 letters long.
 
-word_list = open("words/5000-more-common.txt", "r")
+word_list = open("words/words.txt", "r")
 
 # Filter words of length 6       
 # with open("words/six_letter_words.txt", "a") as six_letter_words:
