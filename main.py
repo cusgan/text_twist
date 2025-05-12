@@ -15,7 +15,11 @@ while(1):
 
 if (user_choice == '1'):
     print("You chose: Start Game")
-    game.start_game()
+    game_details = game.start_game()
+    print("You completed " + str(game_details[0]) + " stages!")
+
+    lb.add_to_leaderboard(game_details[1], game_details[0])
+
 elif (user_choice == '2'):
     print("You chose: View Leaderboard")
     lb.view_leaderboard()
